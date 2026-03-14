@@ -25,7 +25,10 @@ function toggleTheme() {
 
 function applyTheme(mode) {
   const toggleBtn = document.getElementById('theme-toggle');
+  if (!toggleBtn) return;
+  
   const icon = toggleBtn.querySelector('i');
+  if (!icon) return;
 
   if (mode === 'light') {
     document.documentElement.classList.add('light-mode');
