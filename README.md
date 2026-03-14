@@ -1,6 +1,6 @@
 # Portfolio — Personal Portfolio Website
 
-A modern, responsive portfolio built with vanilla HTML, CSS, and JavaScript. Content is data-driven via text files.
+A modern, responsive portfolio built with vanilla HTML, CSS, and JavaScript. Works directly in the browser — no server required.
 
 > Screenshot coming soon
 
@@ -44,19 +44,9 @@ portfolio/
 
 ## Getting Started
 
-### Prerequisites
-- Modern web browser
-- Python 3 (for local server) or any static file server
+Simply open `index.html` directly in your browser, or double-click the file.
 
-### Run Locally
-
-```bash
-python3 -m http.server 8080
-```
-
-Open http://localhost:8080 in your browser.
-
-> **Note:** The site must be served over HTTP (not opened as `file://`) because JavaScript uses `fetch()` to load content from the `data/` directory.
+No server or installation required.
 
 ## Customize Your Content
 
