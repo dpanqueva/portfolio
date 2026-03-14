@@ -1,0 +1,288 @@
+@import './variables.css';
+
+/* Layout */
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.pf-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  background-color: rgba(var(--color-bg), 0.85);
+  background-color: color-mix(in srgb, var(--color-bg) 85%, transparent);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--color-border);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  transition: var(--transition);
+}
+
+.pf-navbar.scrolled {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.pf-nav-link {
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  font-size: var(--fs-sm);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.pf-nav-link:hover,
+.pf-nav-link.active {
+  color: var(--color-accent-soft);
+}
+
+.pf-theme-toggle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+  transition: var(--transition);
+}
+
+.pf-theme-toggle:hover {
+  border-color: var(--color-accent);
+}
+
+/* Hero */
+.pf-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at 60% 50%, var(--color-accent-glow), transparent 70%);
+  padding-top: 80px;
+}
+
+.pf-hero-title {
+  font-family: var(--font-display);
+  font-size: var(--fs-hero);
+  line-height: 1.1;
+  margin-bottom: var(--fs-lg);
+}
+
+.pf-hero-tagline {
+  font-size: var(--fs-lg);
+  color: var(--color-text-muted);
+  margin-bottom: var(--fs-xl);
+}
+
+.pf-avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--color-accent);
+  object-fit: cover;
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+/* Buttons */
+.btn-pf-primary {
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: var(--radius-pill);
+  padding: 0.75rem 2rem;
+  background-color: var(--color-accent);
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.btn-pf-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+  color: #fff;
+}
+
+.btn-pf-outline {
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: var(--radius-pill);
+  padding: 0.75rem 2rem;
+  background-color: transparent;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.btn-pf-outline:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+  color: var(--color-accent-soft);
+  border-color: var(--color-accent-soft);
+}
+
+/* Sections */
+.pf-section {
+  padding: var(--section-py) 0;
+}
+
+.pf-section-alt {
+  background-color: var(--color-bg-alt);
+}
+
+.pf-section-title {
+  font-family: var(--font-display);
+  font-size: var(--fs-2xl);
+  margin-bottom: var(--fs-lg);
+}
+
+.pf-accent-line {
+  width: 48px;
+  height: 3px;
+  background-color: var(--color-accent);
+  margin-bottom: var(--fs-lg);
+}
+
+/* Cards */
+.pf-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--fs-xl);
+  transition: var(--transition);
+}
+
+.pf-card:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-4px);
+}
+
+/* Timeline */
+.pf-timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.pf-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--color-accent), transparent);
+}
+
+.pf-timeline-item {
+  position: relative;
+  margin-bottom: var(--fs-xl);
+}
+
+.pf-timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  top: 0.25rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  box-shadow: 0 0 8px var(--color-accent-glow);
+  transform: translateX(-5px);
+}
+
+.pf-timeline-period {
+  font-size: var(--fs-xs);
+  color: var(--color-accent-soft);
+  text-transform: uppercase;
+  margin-bottom: var(--fs-xs);
+}
+
+.pf-timeline-company {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.pf-timeline-role {
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--fs-sm);
+}
+
+/* Badges */
+.pf-badge {
+  background-color: var(--color-accent-glow);
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent-soft);
+  border-radius: var(--radius-pill);
+  padding: 0.2rem 0.75rem;
+  font-size: var(--fs-xs);
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Skills */
+.pf-skill-group {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--fs-xl);
+  transition: var(--transition);
+}
+
+.pf-skill-group:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-4px);
+}
+
+.pf-skill-label {
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--fs-sm);
+}
+
+/* Contact */
+.pf-contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--color-text);
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+
+.pf-contact-link:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent-soft);
+}
+
+/* Footer */
+.pf-footer {
+  background-color: var(--color-bg-alt);
+  border-top: 1px solid var(--color-border);
+  padding: var(--fs-xl) 0;
+  text-align: center;
+  font-size: var(--fs-sm);
+}
