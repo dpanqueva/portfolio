@@ -1,0 +1,17 @@
+CATEGORIA: Backend
+ITEMS: Java 8-21, Spring Boot, Spring WebFlux, Microservices, REST APIs, OAuth2, JWT
+
+CATEGORIA: Arquitectura
+ITEMS: Microservices Architecture, Clean Architecture, SOLID, Distributed Systems, API Design
+
+CATEGORIA: Bases de Datos
+ITEMS: PostgreSQL, Oracle, MySQL, SQL Server, MongoDB
+
+CATEGORIA: DevOps & Cloud
+ITEMS: Docker, Kubernetes, OpenShift, Jenkins, ArgoCD, CI/CD, GCP
+
+CATEGORIA: Frontend
+ITEMS: Angular, JavaScript, HTML, CSS
+
+CATEGORIA: Integración
+ITEMS: RabbitMQ, ActiveMQ, Kafka, SOAP, REST, API Gateway

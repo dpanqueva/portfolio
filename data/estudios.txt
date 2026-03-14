@@ -1,0 +1,19 @@
+---
+INSTITUCION: Universidad Nacional Abierta y a Distancia
+TITULO: Ingeniería de Sistemas
+PERIODO: 2020
+DESCRIPCION: Formación en ingeniería de software, arquitectura de sistemas, bases de datos y desarrollo de aplicaciones empresariales.
+TIPO: Grado
+---
+INSTITUCION: SENA
+TITULO: Tecnólogo en Análisis y Desarrollo de Sistemas de Información
+PERIODO: 2012
+DESCRIPCION: Desarrollo de software, bases de datos y análisis de requerimientos para sistemas empresariales.
+TIPO: Tecnólogo
+---
+INSTITUCION: Coruniversitec
+TITULO: Tecnólogo en Ingeniería de Sistemas
+PERIODO: 2011
+DESCRIPCION: Fundamentos de programación, arquitectura de sistemas y bases de datos.
+TIPO: Tecnólogo
+---

@@ -1,0 +1,6 @@
+NOMBRE: Diego Alejandro Panqueva Benítez
+TAGLINE: Senior Backend Developer | Java & Microservices Architect
+BIO: Ingeniero de Sistemas con 13+ años desarrollando software backend. Especialista en microservicios con Java y Spring Boot, arquitectura distribuida y APIs REST en entornos cloud. Enfocado en soluciones escalables, resilientes y mantenibles aplicando Clean Architecture y principios SOLID.
+FOTO: https://avatars.githubusercontent.com/u/0
+UBICACION: Huesca, España
+DISPONIBILIDAD: Disponible para proyectos freelance y oportunidades full-time

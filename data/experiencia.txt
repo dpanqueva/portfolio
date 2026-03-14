@@ -1,0 +1,31 @@
+---
+EMPRESA: THE WHITEAM
+CARGO: Desarrollador Java Microservicios
+PERIODO: Abr 2025 — Presente
+DESCRIPCION: Desarrollo de microservicios con Java 17/21 y Spring Boot. Diseño de APIs con WSO2, integración con SQL Server y despliegue en OpenShift con CI/CD usando ArgoCD y SonarQube.
+TAGS: Java, Spring Boot, Microservices, SQL Server, OpenShift, Docker, ArgoCD
+---
+EMPRESA: GLINTT
+CARGO: Consultor de Sistemas
+PERIODO: Oct 2024 — Abr 2025
+DESCRIPCION: Desarrollo y mantenimiento de microservicios para MasOrange. Integración con Oracle y PostgreSQL, monitoreo con Kibana y Grafana e integración continua con Jenkins y GitLab.
+TAGS: Java 17, Spring Boot, Oracle, PostgreSQL, Jenkins, Docker
+---
+EMPRESA: SAMTEL CONSULTORES
+CARGO: Analista Desarrollador
+PERIODO: Sep 2023 — Oct 2024
+DESCRIPCION: Desarrollo de microservicios Spring Boot para integración de sistemas mediante conversión de XML a JSON y mantenimiento de plataformas empresariales.
+TAGS: Java 8, Spring Boot, REST APIs, Oracle, GitLab
+---
+EMPRESA: EVERIS / NTT DATA
+CARGO: Software Engineer
+PERIODO: Mar 2021 — Jun 2023
+DESCRIPCION: Desarrollo de microservicios para proyectos de datos maestros y telecomunicaciones. Implementación de mensajería con RabbitMQ y ActiveMQ y despliegues en GCP con Docker.
+TAGS: Java, Spring Boot, RabbitMQ, ActiveMQ, Docker, GCP
+---
+EMPRESA: PERIFERIA IT GROUP
+CARGO: Consultor Desarrollador Java
+PERIODO: Mar 2020 — Feb 2021
+DESCRIPCION: Desarrollo full-stack con microservicios Spring Boot y Angular. Implementación de OAuth2, JWT, Eureka y Zuul para arquitectura de microservicios.
+TAGS: Java, Spring Boot, Angular, OAuth2, JWT, Docker
+---
