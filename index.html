@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio showcasing experience, skills, and projects">
+  <title>Diego Alejandro Panqueva — Portfolio</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <nav class="pf-navbar navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="font-family: var(--font-display); color: var(--color-accent); font-size: 1.5rem;">&lt;/&gt;</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border-color: var(--color-border);">
+        <i class="bi bi-list" style="color: var(--color-text);"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="pf-nav-link nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="pf-nav-link nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="pf-nav-link nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="pf-nav-link nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="pf-nav-link nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <button id="theme-toggle" class="pf-theme-toggle ms-3">
+          <i class="bi bi-sun-fill"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="hero" class="pf-hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 text-column order-2 order-lg-1">
+            <div class="anim-fade-up anim-d4">
+              <span class="pf-badge">
+                <i class="bi bi-circle-fill" style="font-size: 0.5rem; color: #22c55e;"></i>
+                <span id="hero-status"></span>
+              </span>
+            </div>
+            <h1 class="pf-hero-title anim-fade-up anim-d2">
+              <span id="hero-name"></span>
+            </h1>
+            <p class="pf-hero-tagline anim-fade-up anim-d3">
+              <i class="bi bi-terminal-fill" style="color: var(--color-accent);"></i>
+              <span id="hero-tagline"></span>
+            </p>
+            <p class="anim-fade-up anim-d4" style="color: var(--color-text-muted); max-width: 540px;">
+              <span id="hero-bio"></span>
+            </p>
+            <div class="d-flex flex-wrap gap-3 mt-4 anim-fade-up anim-d4">
+              <a href="#contact" class="btn-pf-primary">
+                <i class="bi bi-chat-dots me-2"></i>Let's talk
+              </a>
+              <a href="#experience" class="btn-pf-outline">
+                <i class="bi bi-briefcase me-2"></i>View experience
+              </a>
+            </div>
+            <p class="mt-4" style="font-size: var(--fs-sm); color: var(--color-text-muted);">
+              <i class="bi bi-geo-alt me-1"></i>
+              <span id="hero-location"></span>
+            </p>
+          </div>
+          <div class="col-lg-5 photo-column order-1 order-lg-2 text-center text-lg-end mb-4 mb-lg-0">
+            <img id="hero-photo" class="pf-avatar anim-fade-up anim-d2" loading="lazy" src="" alt="Profile photo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="pf-section pf-section-alt">
+      <div class="container">
+        <div class="pf-accent-line reveal"></div>
+        <h2 class="pf-section-title reveal">About Me</h2>
+        <p class="pf-section-subtitle reveal" style="color: var(--color-text-muted); margin-bottom: var(--fs-xl);">A bit of context about who I am</p>
+        <div class="col-lg-8 mx-auto">
+          <div class="pf-card reveal">
+            <p id="about-bio"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="pf-section">
+      <div class="container">
+        <div class="pf-accent-line reveal"></div>
+        <h2 class="pf-section-title reveal">Experience</h2>
+        <p class="pf-section-subtitle reveal" style="color: var(--color-text-muted); margin-bottom: var(--fs-xl);">My professional journey</p>
+        <div class="col-lg-8 mx-auto">
+          <div class="pf-timeline" id="experience-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="pf-section pf-section-alt">
+      <div class="container">
+        <div class="pf-accent-line reveal"></div>
+        <h2 class="pf-section-title reveal">Education</h2>
+        <p class="pf-section-subtitle reveal" style="color: var(--color-text-muted); margin-bottom: var(--fs-xl);">Academic background and certifications</p>
+        <div class="row g-4" id="education-grid"></div>
+      </div>
+    </section>
+
+    <section id="skills" class="pf-section">
+      <div class="container">
+        <div class="pf-accent-line reveal"></div>
+        <h2 class="pf-section-title reveal">Skills</h2>
+        <p class="pf-section-subtitle reveal" style="color: var(--color-text-muted); margin-bottom: var(--fs-xl);">Technical stack and tools</p>
+        <div class="row g-4" id="skills-grid"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="pf-section pf-section-alt">
+      <div class="container">
+        <div class="pf-accent-line reveal"></div>
+        <h2 class="pf-section-title reveal">Contact</h2>
+        <p id="contact-cta" class="pf-section-subtitle reveal" style="color: var(--color-text-muted); margin-bottom: var(--fs-xl);"></p>
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <div class="pf-card reveal" id="contact-links"></div>
+          </div>
+          <div class="col-lg-5">
+            <div class="pf-card reveal">
+              <form>
+                <div class="mb-3">
+                  <label for="contact-name" class="form-label" style="font-size: var(--fs-sm); color: var(--color-text-muted);">Name</label>
+                  <input type="text" id="contact-name" class="form-control" style="background-color: var(--color-bg); border: 1px solid var(--color-border); color: var(--color-text);">
+                </div>
+                <div class="mb-3">
+                  <label for="contact-email" class="form-label" style="font-size: var(--fs-sm); color: var(--color-text-muted);">Email</label>
+                  <input type="email" id="contact-email" class="form-control" style="background-color: var(--color-bg); border: 1px solid var(--color-border); color: var(--color-text);">
+                </div>
+                <div class="mb-3">
+                  <label for="contact-message" class="form-label" style="font-size: var(--fs-sm); color: var(--color-text-muted);">Message</label>
+                  <textarea id="contact-message" rows="4" class="form-control" style="background-color: var(--color-bg); border: 1px solid var(--color-border); color: var(--color-text);"></textarea>
+                </div>
+                <button type="submit" class="btn-pf-primary w-100">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pf-footer">
+    <div class="container">
+      <p style="margin: 0;">
+        Built with <i class="bi bi-heart-fill" style="color: var(--color-accent);"></i> HTML · CSS · Bootstrap 5 · Vanilla JS
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
