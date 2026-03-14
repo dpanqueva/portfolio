@@ -29,17 +29,17 @@ portfolio/
 ├── css/
 │   ├── variables.css      # Design tokens (colors, fonts, spacing)
 │   ├── components.css     # UI component styles
-│   └── animations.css     # Keyframes and reveal animations
+│   └── animations.css    # Keyframes and reveal animations
 ├── js/
-│   ├── theme.js           # Dark/light mode toggle
-│   ├── loader.js          # Content loader from data/*.txt
-│   └── main.js            # Entry point
+│   ├── theme.js          # Dark/light mode toggle
+│   ├── loader.js         # Content loader from data/*.txt
+│   └── main.js           # Entry point
 └── data/
-    ├── perfil.txt         # Personal info
-    ├── experiencia.txt    # Work experience
-    ├── estudios.txt       # Education
-    ├── habilidades.txt    # Skills
-    └── contacto.txt       # Contact info
+    ├── perfil.txt        # Personal info
+    ├── experiencia.txt   # Work experience
+    ├── estudios.txt      # Education
+    ├── habilidades.txt  # Skills
+    └── contacto.txt     # Contact info
 ```
 
 ## Getting Started
